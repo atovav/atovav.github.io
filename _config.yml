@@ -9,15 +9,15 @@ gems:
 # If you are hosting it on Github for some project with name 'projectname', then the url and baseurl should look like:
 #url: "http://username.github.io/projectname"
 #baseurl: "/projectname"
-url: ""
+url: "http://atovav.github.io"
 enforce_ssl: ""
-baseurl: "/jekyllBasic"
+baseurl: ""
 
 # Title of website
-title: Project Name
+title: Alan Tovar
 
 #Default keywords (used if no keywords are specified on a page basis)
-keywords: test1, test2, etc
+keywords: Alan, Tovar
 
 # Short description of your site
 desc: Sample Description
@@ -26,19 +26,20 @@ desc: Sample Description
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
-avatar: "/img/avatar.jpg"
+#avatar: "/img/avatar.jpg"
 
 # List of links in the navigation bar
 nav-links:
   Home: ""
-  About Me: "aboutme"
-  Contact: "contact"  
+  About Me: "pages/about.html"
+  Contact: "pages/people.html"
+  Publications: "pages/publications.html"  
   
 # --- Footer options --- #
 
 # If the values are empty, they are ignored 
 profile:
-  name: Babji Chetty
+  name: Alan Tovar
   email: Your-Email
   facebook: your-fb-id
   github: your-github-id 
