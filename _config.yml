@@ -33,7 +33,7 @@ nav-links:
   Home: ""
   About Me: "pages/about.html"
   Contact: "pages/people.html"
-  Publications: "pages/publications.html"  
+  Projects: "pages/projects.html"  
   
 # --- Footer options --- #
 
@@ -42,7 +42,7 @@ profile:
   name: Alan Tovar
   email: Your-Email
   facebook: your-fb-id
-  github: your-github-id 
+  github: https://github.com/atovav 
   twitter: your-twitter-id
   linkedin: your-linkedin-id
   stackoverflow: your-stackoverflow-id
@@ -59,7 +59,7 @@ disqus: "Your-Disqus-Id"
 google_analytics: "Your-GA-Id"
 
 # Set these options as you need (For more information, check Jekyll's site)
-timezone: "Europe/Berlin"
+timezone: "America/Mexico_City"
 markdown: kramdown
 #highlighter: rouge
 kramdown:
