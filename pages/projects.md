@@ -16,10 +16,12 @@ Took 1,100 tweets with the value BBVA Bancomer to analyze how those tweets chang
 
 ### Movielens 
 
-
+Predicting ratings users will give to a movie .
+- [Movielens](projects/Movielens.html)
 
 ### Predicting Telemarketing data from a bank
 
+Predicting wherever a customer will accept the promotion.
+- [Bank Telemarketing](projects/BankMKT.html)
 
-
-### Predicting House prices 
+### Predicting House prices
