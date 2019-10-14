@@ -32,7 +32,7 @@ desc: Sample Description
 nav-links:
   Home: ""
   About Me: "pages/about.html"
-  Contact: "pages/people.html"
+  Contact: "pages/contact.html"
   Projects: "pages/projects.html"  
   
 # --- Footer options --- #
