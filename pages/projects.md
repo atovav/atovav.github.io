@@ -11,7 +11,7 @@ title: Projects
 ### Analyzing BBVA tweets
 
 Took 1,100 tweets with the value BBVA Bancomer to analyze how those tweets change over time.
-- [BBVA Tweets](pages/projects/BBVA.html)
+- [BBVA Tweets](.../projects/BBVA.html)
 
 
 ### Movielens 
