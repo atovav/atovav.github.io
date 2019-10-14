@@ -1,3 +1,8 @@
+---
+layout: template1
+title: Bank Telemkt
+---
+
 Bank Telemarketing
 ================
 Alan Tovar
