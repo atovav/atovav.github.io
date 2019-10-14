@@ -1,0 +1,177 @@
+---
+title: "Data Mining BBVA"
+author: "Alan"
+date: "June 15, 2019"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Análisis y minería de Tweets sobre BBVA Bancomer.
+
+```{r startt, include=FALSE}
+library(rtweet)
+library(tidyverse)
+library(tidytext)
+library(tm)
+library(purrr)
+library(broom)
+library(ggthemes)
+library(RColorBrewer)
+library(viridis)
+library(knitr)
+library(igraph)
+library(ggraph)
+library(wordcloud)
+library(lubridate)
+Tweets <- read_csv("Tweets.csv")
+stopwords_es <- read_csv("stopwords-es.txt", col_names = FALSE)
+Spanish_stop_words <- bind_rows(stop_words,tibble(word = tm::stopwords("spanish"),lexicon = "custom"),
+                                 tibble(word = stopwords_es$X1, lexicon = "custom"))
+```
+Prueba de Data Mining en Twitter usando el paquete rtweet.
+Se tomo una muestra de 1,100 tweets los cuales tuvieran la palabra o estuvieran referenciados a Bancomer..  
+Para bajar los tweets se necesita una cuenta de twitter y solo se permite bajar 18,000 tweets cada 15 minutos.
+Al bajar los Tweets se obtiene la siguiente distribución de tweets: 
+
+
+```{r exploracion}
+ts_plot(Tweets, by = "1 hours")
+```
+
+Para analizar los tweets, se deben de quitar cosas como emojis, URL, tweets de noticias asi como palabras comunes (ej. asi, de, a, etc.). Después se tienen que separar los tweets en palabras individuales lo cuales se logran con el paquete tidytext. Las 20 palabras mas usadas son: 
+
+```{r, echo=FALSE}
+Tweets <- Tweets %>% 
+   mutate(text = str_replace_all(text, "https://t.co/[A-Za-z\\d]+|&amp;", "")) %>%
+   select(created_at,screen_name,text,source) %>%
+   mutate(tweet_number = row_number())
+tidy_tweets <- Tweets %>% unnest_tokens(word, text, token = "tweets") %>%
+   filter(!word %in% Spanish_stop_words$word,
+          !word %in% str_remove_all(Spanish_stop_words$word, "'"),
+          str_detect(word, "[a-z]"),
+          !word %in% c("hola","#copaoro"))
+ tidy_tweets <- tidy_tweets %>% mutate(word = recode(word, "mexico" = "méxico", "#mexico" = "#méxico"))
+ tidy_tweets %>%
+   na.omit() %>%
+   count(word, sort = TRUE) %>%
+   head(20) %>%
+   mutate(word = reorder(word, n)) %>%
+   ggplot(aes(x = word, y = n, fill = word)) +
+   geom_col(show.legend = FALSE) +
+   coord_flip() +
+   scale_color_brewer(palette = "Spectral") 
+```
+
+Eliminando todas las palabras que empiezen con @ tenemos lo siguiente:
+
+```{r, echo=FALSE}
+tidy_tweets %>%
+   na.omit() %>%
+   filter(!str_detect(word, "^@")) %>%
+   count(word, sort = TRUE) %>%
+   head(20) %>%
+   mutate(word = reorder(word, n)) %>%
+   ggplot(aes(x = word, y = n, fill = word)) +
+   geom_col(show.legend = FALSE) +
+   coord_flip() +
+   scale_color_brewer(palette = "Spectral") 
+```
+
+Lo que más resalta es que al momento de estos tweets, se realizó el cambio de nombre de BBVA, por lo se observan palabras como identidad, marca, etc. 
+
+```{r, echo=FALSE}
+tidy_tweets <- tidy_tweets %>% filter(!str_detect(word, "^@"), !word %in% c("u","fe0f"))
+```
+
+Otra forma de analizar texto es usando n-grams, este caso juntando 2 palabras y contando cuando estas 2 palabra ocurren.
+
+```{r}
+ dat_bigram <- tidy_tweets %>%  group_by(tweet_number) %>%  summarise(text = str_c(word, collapse = " "))%>% 
+   unnest_tokens(bigram, text, token = "ngrams", n = 2, collapse = FALSE)%>% 
+   na.omit() %>% filter(!bigram %in% c("u fe0f", "bancomer u"))
+ dat_bigram %>%
+   count(bigram, sort = TRUE)%>%
+   head(20)%>%
+   kable(align = "c") 
+```
+
+Se nota el cambio de identidad en los pares de palabras. Una forma de ver la relación entre las palabras es usando una gráfica de redes lo cual nos da lo siguiente:
+
+```{r, echo=FALSE}
+ bigrams_separated <- dat_bigram %>%
+   separate(bigram, c("word1", "word2"), sep = " ") 
+ bigram_counts <- bigrams_separated %>% 
+   count(word1, word2, sort = TRUE)
+ bigram_graph <- bigram_counts %>%
+   filter(n > 25) %>%
+   graph_from_data_frame()
+ ggraph(bigram_graph, layout = "fr") +
+   geom_edge_link() +
+   geom_node_point() +
+   geom_node_text(aes(label = name), vjust = 1, hjust = 1)+
+   theme_void() 
+```
+
+Ahora veremos que palabras cambian rápidamente en el periodo de los tweets. O para decirlo de otra manera, ¿Que palabras se usan más o menos a lo largo del día? Para realizar esto, tenemos que definir contenedores de un día y contar el número de palabras usadas dentro de esos contenedores y solo se usaran palabras que sean usadas un mínimo de 30 veces.
+
+```{r, echo=FALSE}
+ words_by_time <- tidy_tweets %>%
+   filter(!str_detect(word, "^@")) %>%
+   mutate(time_floor = floor_date(created_at, unit = "1 day")) %>%
+   count(time_floor, word) %>%
+   group_by(time_floor) %>%
+   mutate(time_total = sum(n)) %>%
+   group_by(word) %>%
+   mutate(word_total = sum(n)) %>%
+   ungroup() %>%
+   rename(count = n) %>%
+   filter(word_total > 30)
+ words_by_time 
+```
+
+La columna count nos indica las veces que se usó esa palabra en el contenedor de una hora, time_total nos dice cuantas palabras se usaron en ese periodo de tiempo y word_total indica cuantas veces se usó esa palabra en tod el periodo.
+
+Tenemos que realizar un modelo general lineal para cada palabra. Estos modelos responden la pregunta ¿Fue esta palabra mencionada en algún contenedor? ¿Si o No? ¿Como el número de menciones de una palabra depende con el tiempo? Para realizar esto, para cada palabra se adjuntan los datos de cada contenedor y se adjunta el modelo generado.
+
+```{r, echo=FALSE}
+ nested_data <- words_by_time %>%
+   nest(-word)
+ nested_models <- nested_data %>%
+   mutate(models = map(data, ~ glm(cbind(count, time_total) ~ time_floor, ., 
+                                   family = "binomial")))
+ nested_models 
+```
+
+El resultado contiene la palabra, la columna data contiene los datos con los contenedores y la columna models contiene el modelo que corresponde a cada palabra.
+
+Posteriormente extraemos las pendientes de cada modelo y buscamos las más importantes. Estamos comparando muchas pendientes por lo cual se aplica un ajuste a los valores p para realizar comparaciones múltiples, y se filtra para encontrar las pendientes más significativas.
+
+```{r, echo=FALSE}
+slopes <- nested_models %>%
+   unnest(map(models, tidy)) %>%
+   filter(term == "time_floor") %>%
+   mutate(adjusted.p.value = p.adjust(p.value))
+ top_slopes <- slopes %>% 
+   filter(adjusted.p.value < 0.05)
+ top_slopes 
+```
+
+Tenemos que visualizar los resultados por lo que graficamos a lo largo del periodo y obtenemos la siguiente grafica.
+
+```{r, echo=FALSE}
+ words_by_time %>%
+   inner_join(top_slopes, by = c("word")) %>%
+   filter(!word %in% c("méxico","gt")) %>%
+   mutate(freq = count/time_total) %>%
+   mutate(word = reorder(word,freq)) %>%
+   ggplot(aes(time_floor, freq, color = word)) +
+   geom_line(size = 1.3) +
+   geom_point() +
+   labs(x = NULL, y = "Word frequency") +
+   theme_fivethirtyeight() +
+   scale_color_viridis(discrete=TRUE, option = "plasma") 
+```
+
