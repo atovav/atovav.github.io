@@ -1,3 +1,8 @@
+---
+layout: template1
+title: Geodata
+---
+
 # GeoVisualization using Keplergl & Uber's Movement data
 
 We are going to use Uber's Keplergl and movement data to visualize Mexico times. 
