@@ -574,7 +574,7 @@ map1.add_data(data=df, name='d')
 map1
 ```
 
-![html](Geo/first_map.html)
+![html](Geo/map.jpg)
 
 
 ```python
