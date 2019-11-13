@@ -129,4 +129,5 @@ Tenemos que visualizar los resultados por lo que graficamos a lo largo del perio
 
 Podemos observar que la palabra mas usada y la que mas cambia a lo largo del tiempo es Bancomer. La
 palabra que mas salta, especificamente al final es estrena.
+<br />
 Interesantemente BBVA no aparece.
