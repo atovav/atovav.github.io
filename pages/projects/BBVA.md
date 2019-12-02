@@ -6,13 +6,18 @@ title: Data Mining BBVA
 Data Mining BBVA
 ================
 Alan
-June 15, 2019
+June 15/ December 2 , 2019
 
-Análisis y minería de Tweets sobre BBVA Bancomer.
+Análisis de Tweets sobre BBVA y Bancomer.
 =================================================
 
-Prueba de Data Mining en Twitter usando el paquete rtweet. Se tomo una muestra de 1,100 tweets los cuales tuvieran la palabra o estuvieran referenciados a Bancomer..
-Para bajar los tweets se necesita una cuenta de twitter y solo se permite bajar 18,000 tweets cada 15 minutos. Al bajar los Tweets se obtiene la siguiente distribución de tweets:
+El 15 de junio del 2019 BBVA eliminó la palabra Bancomer para consolidar su marca a nivel mundial.
+Ese día se tomo una muestra de 1,100 tweets los cuales tuvieran la palabra o estuvieran referenciados a Bancomer, posteriormente se volvio a tomar otra muestra despues de 6 meses para ver si existe un cambio en los tweets.
+
+15 de Junio 2019
+----------------
+
+Usando el paquete rtweets se obtuvieron 1,100 tweets que tuvieran la palabra 'Bancomer', la distribución por día de esos tweets queda de la siguiente forma: 
 
 ``` r
 ts_plot(Tweets, by = "1 hours")
@@ -22,15 +27,11 @@ ts_plot(Tweets, by = "1 hours")
 
 Para analizar los tweets, se deben de quitar cosas como emojis, URL, tweets de noticias asi como palabras comunes (ej. asi, de, a, etc.). Después se tienen que separar los tweets en palabras individuales lo cuales se logran con el paquete tidytext. Las 20 palabras mas usadas son:
 
-![](BBVA_files/figure-markdown_github/unnamed-chunk-1-1.png)
-
-Eliminando todas las palabras que empiezen con @ tenemos lo siguiente:
-
 ![](BBVA_files/figure-markdown_github/unnamed-chunk-2-1.png)
 
-Lo que más resalta es que al momento de estos tweets, se realizó el cambio de nombre de BBVA, por lo se observan palabras como identidad, marca, etc.
+Se observan palabras como identidad, marca, etc. por ser la semana la cual se realizó el cambio. Y la diferencia de menciones de bbva a bancomer es de aprox 150 menciones.
 
-Otra forma de analizar texto es usando n-grams, este caso juntando 2 palabras y contando cuando estas 2 palabra ocurren.
+En vez de palabras individuales vemos como aparecen en conjunto, usando n-grams, el cual junta 2 palabras y las cuenta cuando el par de palabras ocurren.
 
 ``` r
  dat_bigram <- tidy_tweets %>%  group_by(tweet_number) %>%  summarise(text = str_c(word, collapse = " "))%>% 
@@ -65,11 +66,12 @@ Otra forma de analizar texto es usando n-grams, este caso juntando 2 palabras y 
 |   pasaremos reporte  |  30 |
 |     recaba datos     |  30 |
 
-Se nota el cambio de identidad en los pares de palabras. Una forma de ver la relación entre las palabras es usando una gráfica de redes lo cual nos da lo siguiente:
+
+De los 20 conjuntos de palabras mas importantes 6 de estos son de bancomer, siendo los 2 primeros una combinacion de bbva y bancomer. Usamos una gráfica de redes para ver la relación entre las palabras:
 
 ![](BBVA_files/figure-markdown_github/unnamed-chunk-5-1.png)
 
-Ahora veremos que palabras cambian rápidamente en el periodo de los tweets. O para decirlo de otra manera, ¿Que palabras se usan más o menos a lo largo del día? Para realizar esto, tenemos que definir contenedores de un día y contar el número de palabras usadas dentro de esos contenedores y solo se usaran palabras que sean usadas un mínimo de 30 veces.
+Ahora veremos que palabras cambian rápidamente en el periodo de los tweets. O para decirlo de otra manera, ¿Que palabras se usan más o menos a lo largo del día? Para realizar esto, tenemos que definir contenedores de un periodo de tiempo y contar el número de palabras usadas dentro de esos contenedores y solo se usaran palabras que sean usadas un mínimo de 30 veces.
 
     ## # A tibble: 337 x 5
     ##    time_floor          word        count time_total word_total
@@ -123,11 +125,91 @@ Posteriormente extraemos las pendientes de cada modelo y buscamos las más impor
     ##  9 lunes   time_f~   -6.20e-6   1.56e-6     -3.99 6.67e- 5  0.00227        
     ## 10 oficial time_f~   -7.68e-6   1.70e-6     -4.52 6.08e- 6  0.000231
 
-Tenemos que visualizar los resultados por lo que graficamos a lo largo del periodo y obtenemos la siguiente grafica.
+Visualizando los resultados obtenemos la siguiente grafica.
 
 ![](BBVA_files/figure-markdown_github/unnamed-chunk-9-1.png)
 
 Podemos observar que la palabra mas usada y la que mas cambia a lo largo del tiempo es Bancomer. La
-palabra que mas salta, especificamente al final es estrena.
+palabra que mas salta, especificamente al final es estrena. Interesantemente BBVA no aparece.
 <br />
-Interesantemente BBVA no aparece.
+Dejando pasar 6 meses queremos ver como ha cambiado el uso de estas palabras y que tanto la gente sigue usando la palabra Bancomer.
+
+2 de Diciembre del 2019
+----------------
+
+Nuevamente se descargaron tweets que tuvieran la palabra 'Bancomer' y separamos por palabras individuales quitando palabras no relevantes.
+
+![](BBVA_files/figure-markdown_github/banc2-1.png)
+
+Vemos que la palabra Bancomer aparece 1,000 como la vez pasada, sin embargo la diferencia contra bbva es casi el doble, por lo cual vemos que existe una separación de tweets que refieren a bancomer y bbva.
+
+Juntando la palabras en pares para ver cuales con las que más se utilizan nos da la siguiente tabla:
+
+
+|          bigram          |  n  |
+|:------------------------:|:---:|
+|       bbva bancomer      | 245 |
+|       estadio bbva       | 112 |
+|     alertas bancomer     |  74 |
+|       minuto minuto      |  67 |
+|       único número       |  39 |
+|     código seguridad     |  38 |
+|        cuentas nip       |  38 |
+|        nip código        |  38 |
+|       sigue minuto       |  38 |
+|    solicitaremos datos   |  38 |
+|     tarjeta bancomer     |  38 |
+| monarcasmorelia clubleon |  36 |
+|       claves acceso      |  35 |
+|     mensajes alertas     |  35 |
+|    recibirás mensajes    |  35 |
+|     seguridad claves     |  35 |
+|     número recibirás     |  34 |
+|  bancomer solicitaremos  |  30 |
+|       compra venta       |  30 |
+|      datos sensibles     |  28 |
+
+
+El primer cambio que se observa es que bbva bancomer bajo de 442 a 245, si aún existen menciones, pero es una disminución significante. Tambien de los 20 conjuntas mas usados 4 son relacionados con bancomer, 2 menos que en junio. Otro número significativo es, en junio la suma del conjunto de palabras que contiene bancomer es 749 el cual disminuyo a 387 en diciembre.
+
+
+BBVA en diciembre
+----------------
+
+Finalmente descargamos tweets que contienen la palabra 'bbva', para observar como el volumen de los tweets incrementa a comparación de usar 'Bancomer'.
+
+![](BBVA_files/figure-markdown_github/banc3.png)
+
+Vemos que existe una mayor actividad ya que los tweets que se descargan provienen de todos los paises. Quitando el mayor número de paises mencionados para tratar de buscar tweets que surgan en México obtenemos la siguiente gráfica.
+
+![](BBVA_files/figure-markdown_github/banc3-1.png)
+
+Interesantemente sigue apareciendo bancomer en el lugar 13, sin embargo comparado con bbva es insignificante.
+Vemos el conjunto de palabra que más aparecen y obtenemos una sorpresa:
+
+|        bigram       |  n  |
+|:-------------------:|:---:|
+|      liga bbva      | 645 |
+|       bbva mx       | 580 |
+|     estadio bbva    | 496 |
+|     garanti bbva    | 251 |
+|    bbva bancomer    | 245 |
+|      banco bbva     | 151 |
+|     gerente bbva    | 151 |
+|   bbva scotiabank   | 150 |
+|  antonio benvenuto  | 130 |
+|    apertura liga    | 128 |
+|    santander bbva   | 117 |
+|     mx apertura     | 113 |
+|       liga mx       | 102 |
+|    rayados santos   |  98 |
+| ligamx sientetuliga |  97 |
+|   scotiabank bbva   |  95 |
+|       app bbva      |  94 |
+|      bbva banco     |  90 |
+|  política comercial |  89 |
+|   tarjeta crédito   |  84 |
+
+El par de bbva bancomer es el 5 más utilizado con 245 ocurrencias, sin embargo, bancomer ahora solo aparece 1 vez.
+
+En conclusión, BBVA ha hecho un buen esfuerzo en ir quitando la palabra Bancomer, sin embargo todavia existen personas utilizando esta palabra para referirse al banco. Eliminarlo por completo es un gran reto, pero van por buen camino tomando en cuenta que la marca Bancomer era altamente conocida.
