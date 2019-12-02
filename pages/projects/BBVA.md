@@ -66,7 +66,7 @@ En vez de palabras individuales vemos como aparecen en conjunto, usando n-grams,
 |   pasaremos reporte  |  30 |
 |     recaba datos     |  30 |
 
-
+<br/>
 De los 20 conjuntos de palabras mas importantes 6 de estos son de bancomer, siendo los 2 primeros una combinacion de bbva y bancomer. Usamos una gráfica de redes para ver la relación entre las palabras:
 
 ![](BBVA_files/figure-markdown_github/unnamed-chunk-5-1.png)
@@ -131,7 +131,7 @@ Visualizando los resultados obtenemos la siguiente grafica.
 
 Podemos observar que la palabra mas usada y la que mas cambia a lo largo del tiempo es Bancomer. La
 palabra que mas salta, especificamente al final es estrena. Interesantemente BBVA no aparece.
-<br />
+<br/>
 Dejando pasar 6 meses queremos ver como ha cambiado el uso de estas palabras y que tanto la gente sigue usando la palabra Bancomer.
 
 2 de Diciembre del 2019
@@ -169,7 +169,7 @@ Juntando la palabras en pares para ver cuales con las que más se utilizan nos d
 |       compra venta       |  30 |
 |      datos sensibles     |  28 |
 
-
+<br/>
 El primer cambio que se observa es que bbva bancomer bajo de 442 a 245, si aún existen menciones, pero es una disminución significante. Tambien de los 20 conjuntas mas usados 4 son relacionados con bancomer, 2 menos que en junio. Otro número significativo es, en junio la suma del conjunto de palabras que contiene bancomer es 749 el cual disminuyo a 387 en diciembre.
 
 
@@ -210,6 +210,7 @@ Vemos el conjunto de palabra que más aparecen y obtenemos una sorpresa:
 |  política comercial |  89 |
 |   tarjeta crédito   |  84 |
 
+<br/>
 El par de bbva bancomer es el 5 más utilizado con 245 ocurrencias, sin embargo, bancomer ahora solo aparece 1 vez.
 
 En conclusión, BBVA ha hecho un buen esfuerzo en ir quitando la palabra Bancomer, sin embargo todavia existen personas utilizando esta palabra para referirse al banco. Eliminarlo por completo es un gran reto, pero van por buen camino tomando en cuenta que la marca Bancomer era altamente conocida.
