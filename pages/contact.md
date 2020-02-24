@@ -33,5 +33,5 @@ Use the below form and feel free to shoot a message! :)
 
 <script>
     var contactform =  document.getElementById('contactform');
-    contactform.setAttribute('action', '//formspree.io/' + 'bchetty' + '@' + 'somemail' + '.' + 'com');
+    contactform.setAttribute('action', '//formspree.io/' + 'tovar.alan' + '@' + 'gmail' + '.' + 'com');
 </script>
