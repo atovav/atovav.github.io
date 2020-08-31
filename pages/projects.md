@@ -2,6 +2,10 @@
 layout: template1
 title: Projects
 ---
+# Web App
+<p>My first deep learning app, you can change images to a new style. The page takes time to load</p>
+<p>Mi primera aplicación usando redes neuronales. Permite cambiar images a otro estilo. La aplicación tarda en cargar unos minutos</p>
+-[Imagenizar](https://imagenizar.herokuapp.com/)
 
 # Data Projects
 
