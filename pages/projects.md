@@ -28,11 +28,6 @@ Predicting ratings users will give to a movie .
 Predicting wherever a customer will accept the promotion.
 - [Bank Telemarketing](projects/BankMKT.html)
 
-### Predicting House prices
-
-Kaggel competition of predicting the price of each house.
-- [Predicting House Prices](projects/Phouse.html)
-
 ### Geovisualization of Uber Ride Times
 
 Using Keplergl for Visualization and Mexico uber ride times.
