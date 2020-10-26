@@ -103,7 +103,7 @@ a:active {
 	color: rgb(109, 109, 109)
 }
 .centerimgcontainer {
-	width: 350px;
+	width: 50%;
 	height: auto;
 	margin: 30px auto 0px;
 	display: block
