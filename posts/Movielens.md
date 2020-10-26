@@ -44,7 +44,7 @@ Our data is in 6 columns. The first 2 representing the user and movie id, then t
 <div class="centerimgcontainer">
 <img src="Movielens_files/figure-markdown_github/rat%20-1.png" alt style>
 </div>
-<div class="spaceafterimg">
+<div class="spaceafterimg"></div>
 
 We took the sqrt of the counts to see the results better and we found the following. Whole ratings are more prevalent than half ratings. Most of the ratings fall on 3 or 4, giving the set an average of 3.512.
 
