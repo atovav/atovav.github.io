@@ -15,20 +15,20 @@ title: Projects
 ### Analyzing BBVA tweets
 
 Took 1,100 tweets with the value BBVA Bancomer to analyze how those tweets change over time.
-- [BBVA Tweets](projects/BBVA.html)
+- [BBVA Tweets](posts/BBVA.html)
 
 
 ### Movielens 
 
 Predicting ratings users will give to a movie .
-- [Movielens](projects/Movielens.html)
+- [Movielens](posts/Movielens.html)
 
 ### Predicting Telemarketing data from a bank
 
 Predicting wherever a customer will accept the promotion.
-- [Bank Telemarketing](projects/BankMKT.html)
+- [Bank Telemarketing](posts/BankMKT.html)
 
 ### Geovisualization of Uber Ride Times
 
 Using Keplergl for Visualization and Mexico uber ride times.
-- [Mexico Uber Ride times](projects/Geodata.html)
+- [Mexico Uber Ride times](posts/Geodata.html)
