@@ -11,7 +11,7 @@ September 6, 2020<br />
 
 Dibuja un círculo, ya sea con la mano o en la mente, pero dibuja uno. ¿Listo?<br />
 ¿Hacia qué lado empezaste? ¿Sentido de las manecillas del reloj o en contra?<br />
-<div class="centerimgcontainer">
+<div class="smallcenterimgcontainer">
 <img src="Draw/circ.png" alt style>
 </div>
 Si eres de América o Europa, lo mas probable es que fuera en contra las manecillas del reloj. Mientras en Japón lo mas seguro es que fuera en sentido de las manecillas.<br />
@@ -20,7 +20,7 @@ Si eres de América o Europa, lo mas probable es que fuera en contra las manecil
 <p>Google lanzó al público más de 50 millones de dibujos, hechos por distintas personas que han jugado Quick Draw. Gracias a este set de imágenes podemos conocer como la gente dibuja, y encontrar distintas relaciones. Un ejemplo de esto son las imágenes de círculos.
 Gracias a<a href="https://www.element84.com/blog/determining-the-winding-of-a-polygon-given-as-a-set-of-ordered-points">Geometría</a> podemos saber que direccion se uso para dibujar el circulo.</p>
 <p>En la siguiente grafica podemos ver la dirección de distintos países. Cuando es negativo el valor el circulo va en contra de las manecillas del reloj, cuando es positivo es lo contrario. </p>
-<div class="centerimgcontainer">
+<div class="bigcenterimgcontainer">
 <img src="Draw/countries.png" alt style>
 </div>
 
