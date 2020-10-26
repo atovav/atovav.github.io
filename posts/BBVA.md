@@ -22,12 +22,15 @@ Usando el paquete rtweets se obtuvieron 1,100 tweets que tuvieran la palabra 'Ba
 ``` r
 ts_plot(Tweets, by = "1 hours")
 ```
-
-![](BBVA_files/figure-markdown_github/exploracion-1.png)
+<div class="centerimgcontainer">
+<img src="BBVA_files/figure-markdown_github/exploracion-1.png" alt style>
+</div>
 
 Para analizar los tweets, se deben de quitar cosas como emojis, URL, tweets de noticias asi como palabras comunes (ej. asi, de, a, etc.). Después se tienen que separar los tweets en palabras individuales lo cuales se logran con el paquete tidytext. Las 20 palabras mas usadas son:
 
-![](BBVA_files/figure-markdown_github/unnamed-chunk-2-1.png)
+<div class="centerimgcontainer">
+<img src="BBVA_files/figure-markdown_github/unnamed-chunk-2-1.png" alt style>
+</div>
 
 Se observan palabras como identidad, marca, etc. por ser la semana la cual se realizó el cambio. Y la diferencia de menciones de bbva a bancomer es de aprox 150 menciones.
 
@@ -69,7 +72,9 @@ En vez de palabras individuales vemos como aparecen en conjunto, usando n-grams,
 <br/>
 De los 20 conjuntos de palabras mas importantes 6 de estos son de bancomer, siendo los 2 primeros una combinacion de bbva y bancomer. Usamos una gráfica de redes para ver la relación entre las palabras:
 
-![](BBVA_files/figure-markdown_github/unnamed-chunk-5-1.png)
+<div class="centerimgcontainer">
+<img src="BBVA_files/figure-markdown_github/unnamed-chunk-5-1.png" alt style>
+</div>
 
 Ahora veremos que palabras cambian rápidamente en el periodo de los tweets. O para decirlo de otra manera, ¿Que palabras se usan más o menos a lo largo del día? Para realizar esto, tenemos que definir contenedores de un periodo de tiempo y contar el número de palabras usadas dentro de esos contenedores y solo se usaran palabras que sean usadas un mínimo de 30 veces.
 
@@ -127,7 +132,9 @@ Posteriormente extraemos las pendientes de cada modelo y buscamos las más impor
 
 Visualizando los resultados obtenemos la siguiente grafica.
 
-![](BBVA_files/figure-markdown_github/unnamed-chunk-9-1.png)
+<div class="centerimgcontainer">
+<img src="BBVA_files/figure-markdown_github/unnamed-chunk-9-1.png" alt style>
+</div>
 
 Podemos observar que la palabra mas usada y la que mas cambia a lo largo del tiempo es Bancomer. La
 palabra que mas salta, especificamente al final es estrena. Interesantemente BBVA no aparece.
@@ -139,7 +146,9 @@ Dejando pasar 6 meses queremos ver como ha cambiado el uso de estas palabras y q
 
 Nuevamente se descargaron tweets que tuvieran la palabra 'Bancomer' y separamos por palabras individuales quitando palabras no relevantes.
 
-![](BBVA_files/figure-markdown_github/banc2-1.png)
+<div class="centerimgcontainer">
+<img src="BBVA_files/figure-markdown_github/banc2-1.png" alt style>
+</div>
 
 Vemos que la palabra Bancomer aparece 1,000 como la vez pasada, sin embargo la diferencia contra bbva es casi el doble, por lo cual vemos que existe una separación de tweets que refieren a bancomer y bbva.
 
@@ -178,11 +187,15 @@ BBVA en diciembre
 
 Finalmente descargamos tweets que contienen la palabra 'bbva', para observar como el volumen de los tweets incrementa a comparación de usar 'Bancomer'.
 
-![](BBVA_files/figure-markdown_github/banc3.png)
+<div class="centerimgcontainer">
+<img src="BBVA_files/figure-markdown_github/banc3.png" alt style>
+</div>
 
 Vemos que existe una mayor actividad ya que los tweets que se descargan provienen de todos los paises. Quitando el mayor número de paises mencionados para tratar de buscar tweets que surgan en México obtenemos la siguiente gráfica.
 
-![](BBVA_files/figure-markdown_github/banc3-1.png)
+<div class="centerimgcontainer">
+<img src="BBVA_files/figure-markdown_github/banc3-1.png" alt style>
+</div>
 
 Interesantemente sigue apareciendo bancomer en el lugar 13, sin embargo comparado con bbva es insignificante.
 Vemos el conjunto de palabra que más aparecen y obtenemos una sorpresa:

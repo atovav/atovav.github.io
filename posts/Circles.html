@@ -3,27 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
     
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <title>Circles!</title>
-        
-        <link rel="stylesheet" href="../../fonts/Serif/cmun-serif.css" />
-        <link rel="stylesheet" href="../../fonts/Serif-Slanted/cmun-serif-slanted.css" />
-
-        <!--mobile first-->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <!--removed html from url but still is html-->
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-
-        <!--font awesome-->
-        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-
-        <!--fonts: allan & cardo-->
-        <link href="http://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet" type="text/css">
-        <link href="http://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet" type="text/css">
-
-        <link href="draw/temp.css" rel="stylesheet">
-
+        {% include head.html %}
     </head>
 
     <body>
@@ -49,7 +29,7 @@
 <h2 id="a-simple-example">A Simple Example</h2>
 <p>Let’s begin with a very simple dataset, two curves on a plane. The network will learn to classify points as belonging to one or the other.</p>
 <div class="centerimgcontainer">
-<img src="draw/circ.png" alt style>
+<img src="Draw/circ.png" alt style>
 </div>
 <div class="spaceafterimg">
 
@@ -57,7 +37,7 @@
 <p>The obvious way to visualize the behavior of a neural network – or any classification algorithm, for that matter – is to simply look at how it classifies every possible data point.</p>
 <p>We’ll start with the simplest possible class of neural network, one with only an input layer and an output layer. Such a network simply tries to separate the two classes of data by dividing them with a line.</p>
 <div class="centerimgcontainer">
-<img src="draw/circ.png" alt style>
+<img src="Draw/circ.png" alt style>
 </div>
 <div class="spaceafterimg">
     </body>

@@ -49,7 +49,9 @@ We have 10 variables that are factors (excluding y), and 9 numeric columns. We a
 
 We will plot the relationship between the variables and the dependent variables.
 
-![](BankMKT_files/figure-markdown_github/cont-1.png)
+<div class="bigcenterimgcontainer">
+<img src="BankMKT_files/figure-markdown_github/cont-1.png" alt style>
+</div>
 
 For yes and no we see overlapping on all variables, but in some variables we see a higher mean for the no variable. We do not find a variable that is strongly predictive on the dependent variable.
 
