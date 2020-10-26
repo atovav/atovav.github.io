@@ -10,6 +10,130 @@ body {
   /* Margin bottom by footer height */
   margin-bottom: 80px;
 }
+
+@media only screen and (min-width:768px) {
+	body {
+		text-align: justify
+	}
+}
+
+h1 {
+	font-family: 'CMS', 'Droid Serif', Georgia, Times, serif;
+	font-size: 300%;
+	line-height: 65px;
+	text-align: left
+}
+
+h2 {
+	font-size: 150%;
+	font-weight: bold;
+	text-align: left;
+	margin-top: 40px;
+	margin-bottom: 20px
+}
+
+h3 {
+	font-size: 115%;
+	font-weight: bold;
+	text-align: left;
+	margin-top: 30px;
+	margin-bottom: 20px
+}
+
+h4 {
+	font-weight: bold;
+	text-align: left;
+	margin-top: 30px;
+	margin-bottom: 10px
+}
+
+div.info {
+	color: #555;
+	font-style: italic
+}
+
+#full-screen-background-image {
+	z-index: -999;
+	min-height: 100%;
+	min-width: 1024px;
+	width: 100%;
+	height: auto;
+	position: fixed;
+	top: 0;
+	left: 0
+}
+
+blockquote {
+	background: rgb(245, 245, 245) url("../images/quoteblock.png") no-repeat left top;
+	font-family: 'CMSS';
+	margin-left: 18px;
+	font-size: 18px;
+	padding: 6px 20px 6px 54px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px
+}
+
+pre {
+	margin-left: 18px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	border: none;
+	white-space: pre-wrap;
+	white-space: -moz-pre-wrap !important;
+	white-space: -pre-wrap;
+	white-space: -o-pre-wrap;
+	word-wrap: break-word
+}
+
+a:link {
+	color: rgb(109, 109, 109)
+}
+
+a:visited {
+	color: rgb(109, 109, 109)
+}
+
+a:hover {
+	color: rgb(109, 109, 109)
+}
+
+a:active {
+	color: rgb(109, 109, 109)
+}
+.centerimgcontainer {
+	width: 350px;
+	height: auto;
+	margin: 30px auto 0px;
+	display: block
+}
+
+.bigcenterimgcontainer {
+	width: 70%;
+	height: auto;
+	margin: 30px auto;
+	display: block
+}
+
+.floatrightimgcontainer {
+	width: 200px;
+	height: auto;
+	margin: 0px 0px 30px 30px;
+	float: right
+}
+
+.spaceafterimg {
+	display: block;
+	height: 12px
+}
+
+img {
+	width: 100%;
+	height: auto;
+	margin: 10px auto
+}
+
 .footer {
   position: absolute;
   bottom: 0;

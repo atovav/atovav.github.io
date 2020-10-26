@@ -31,9 +31,9 @@ desc: Sample Description
 # List of links in the navigation bar
 nav-links:
   Home: ""
-  About Me: "pages/about.html"
-  Contact: "pages/contact.html"
-  Projects: "pages/projects.html"  
+  About Me: "about.html"
+  Contact: "contact.html"
+  Projects: "projects.html"  
   
 # --- Footer options --- #
 
