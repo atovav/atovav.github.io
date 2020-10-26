@@ -49,7 +49,7 @@ We have 10 variables that are factors (excluding y), and 9 numeric columns. We a
 
 We will plot the relationship between the variables and the dependent variables.
 
-<div class="bigcenterimgcontainer">
+<div class="centerimgcontainer">
 <img src="BankMKT_files/figure-markdown_github/cont-1.png" alt style>
 </div>
 
