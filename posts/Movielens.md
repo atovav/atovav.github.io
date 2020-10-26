@@ -41,7 +41,11 @@ Before going to the model we need to understand the data and see the relations o
 
 Our data is in 6 columns. The first 2 representing the user and movie id, then the variable that we need to predict, the time stamp is in value instead of a date format, and finally we have the title and genres. We also see that we have more unique users than movies about 6 times more. Looking at the variable to predict, the lowest rating is .5, but the 1st quarterly is 3 so it seems that the ratings are high. Looking at a graph of ratings we see that we were right.
 
-![](Movielens_files/figure-markdown_github/rat%20-1.png) 
+<div class="centerimgcontainer">
+<img src="Movielens_files/figure-markdown_github/rat%20-1.png" alt style>
+</div>
+<div class="spaceafterimg">
+
 We took the sqrt of the counts to see the results better and we found the following. Whole ratings are more prevalent than half ratings. Most of the ratings fall on 3 or 4, giving the set an average of 3.512.
 
 Plotting the distribution of movies and users to see how many users rated a movie and how often the users rate, we get the following plots:
