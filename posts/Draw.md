@@ -11,7 +11,7 @@ September 6, 2020<br />
 
 Dibuja un círculo, ya sea con la mano o en la mente, pero dibuja uno. ¿Listo?<br />
 ¿Hacia qué lado empezaste? ¿Sentido de las manecillas del reloj o en contra?<br />
-<div class="bigcenterimgcontainer">
+<div class="centerimgcontainer" style="width: 200px;">
 <img src="Draw/circ.png" alt style>
 </div>
 Si eres de América o Europa, lo mas probable es que fuera en contra las manecillas del reloj. Mientras en Japón lo mas seguro es que fuera en sentido de las manecillas.<br />
