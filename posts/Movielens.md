@@ -75,7 +75,7 @@ We plot the top 20 movies by number of ratings, and we find that there are big k
 
 Plotting the top 20 users, we see that the first two have over 5,000 rated movies and the number of ratings decreases more quickly in comparison to the movies.
 
-<div class="centerimgcontainer">
+<div class="bigcenterimgcontainer">
 <img src="Movielens_files/figure-markdown_github/users-1.png" alt style>
 </div>
 <div class="spaceafterimg"></div>
