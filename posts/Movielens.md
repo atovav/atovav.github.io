@@ -59,18 +59,26 @@ p2 <- edx %>% count(userId) %>%
   scale_x_log10() + ggtitle("Users")
 grid.arrange(p1, p2, nrow = 1)
 ```
-
-![](Movielens_files/figure-markdown_github/distri-1.png)
+<div class="centerimgcontainer">
+<img src="Movielens_files/figure-markdown_github/distri-1.png" alt style>
+</div>
+<div class="spaceafterimg"></div>
 
 We see movies with only 1 rating, but overall looks like a normal distribution with most movies having around 100 ratings. In the users we see that is right skewed, on average people rate low, with some users having rated 10 times.But there are other users that have rated more than 1000 times,
 
 We plot the top 20 movies by number of ratings, and we find that there are big know movies like pulp fiction, Forrest gump, etc. The top 20 movies have over 20,000 ratings.
 
-![](Movielens_files/figure-markdown_github/movies-1.png)
+<div class="centerimgcontainer">
+<img src="Movielens_files/figure-markdown_github/movies-1.png" alt style>
+</div>
+<div class="spaceafterimg"></div>
 
 Plotting the top 20 users, we see that the first two have over 5,000 rated movies and the number of ratings decreases more quickly in comparison to the movies.
 
-![](Movielens_files/figure-markdown_github/users-1.png)
+<div class="centerimgcontainer">
+<img src="Movielens_files/figure-markdown_github/users-1.png" alt style>
+</div>
+<div class="spaceafterimg"></div>
 
 ### Movie Years effect on rating
 
