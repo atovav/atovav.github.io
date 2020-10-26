@@ -41,7 +41,7 @@ Before going to the model we need to understand the data and see the relations o
 
 Our data is in 6 columns. The first 2 representing the user and movie id, then the variable that we need to predict, the time stamp is in value instead of a date format, and finally we have the title and genres. We also see that we have more unique users than movies about 6 times more. Looking at the variable to predict, the lowest rating is .5, but the 1st quarterly is 3 so it seems that the ratings are high. Looking at a graph of ratings we see that we were right.
 
-<div class="centerimgcontainer">
+<div class="bigcenterimgcontainer">
 <img src="Movielens_files/figure-markdown_github/rat%20-1.png" alt style>
 </div>
 <div class="spaceafterimg"></div>
@@ -59,7 +59,7 @@ p2 <- edx %>% count(userId) %>%
   scale_x_log10() + ggtitle("Users")
 grid.arrange(p1, p2, nrow = 1)
 ```
-<div class="centerimgcontainer">
+<div class="bigcenterimgcontainer">
 <img src="Movielens_files/figure-markdown_github/distri-1.png" alt style>
 </div>
 <div class="spaceafterimg"></div>
@@ -68,7 +68,7 @@ We see movies with only 1 rating, but overall looks like a normal distribution w
 
 We plot the top 20 movies by number of ratings, and we find that there are big know movies like pulp fiction, Forrest gump, etc. The top 20 movies have over 20,000 ratings.
 
-<div class="centerimgcontainer">
+<div class="bigcenterimgcontainer">
 <img src="Movielens_files/figure-markdown_github/movies-1.png" alt style>
 </div>
 <div class="spaceafterimg"></div>
@@ -78,7 +78,6 @@ Plotting the top 20 users, we see that the first two have over 5,000 rated movie
 <div class="bigcenterimgcontainer">
 <img src="Movielens_files/figure-markdown_github/users-1.png" alt style>
 </div>
-<div class="spaceafterimg"></div>
 
 ### Movie Years effect on rating
 
@@ -102,14 +101,20 @@ Then we plot the average rating against the year and we find the following graph
 
     ## `geom_smooth()` using method = 'loess' and formula 'y ~ x'
 
-![](Movielens_files/figure-markdown_github/moveyear-1.png) 
+<div class="bigcenterimgcontainer">
+<img src="Movielens_files/figure-markdown_github/moveyear-1.png" alt style>
+</div>
+
 The size of the points represents the number of ratings. We see that recent movies have more ratings than older movies, however we see a trend. From 1980 the average rating starts to decrease.
 
 ### User year effect
 
 Likewise we want to see if there is an effect from the date the user rated.
 
-![](Movielens_files/figure-markdown_github/usereffect-1.png) 
+<div class="bigcenterimgcontainer">
+<img src="Movielens_files/figure-markdown_github/usereffect-1.png" alt style>
+</div>
+
 We see that except for the 1995 year, the rest of the years it goes up or down around the 3.5 of the mean.
 
 Choosing Parameters
@@ -175,8 +180,10 @@ rmses <- sapply(lambdas, function(l){
 })
 qplot(lambdas, rmses)
 ```
+<div class="bigcenterimgcontainer">
+<img src="Movielens_files/figure-markdown_github/lamda-1.png" alt style>
+</div>
 
-![](Movielens_files/figure-markdown_github/lamda-1.png)
 
 ### SVD
 
@@ -199,8 +206,9 @@ SVD_75=irlba(mat,nu=75,nv=75)
 SVD_100=irlba(mat,nu=100,nv=100)
 plot(SVD_5$d, main="Largest singular values (r=5)") #see latent factors
 ```
-
-![](Movielens_files/figure-markdown_github/svd-1.png)
+<div class="bigcenterimgcontainer">
+<img src="Movielens_files/figure-markdown_github/svd-1.png" alt style>
+</div>
 
 We are going to take the decomposition and dot multiply to have the predicted ratings.
 
@@ -262,8 +270,9 @@ ggplot(RMSEpreds,aes(r,RMSE))+
   geom_point(col='blue',size=2) +
   labs(x="Number of Singular Values", y="RMSE")
 ```
-
-![](Movielens_files/figure-markdown_github/svdplot-1.png)
+<div class="bigcenterimgcontainer">
+<img src="Movielens_files/figure-markdown_github/svdplot-1.png" alt style>
+</div>
 
 Results
 -------
