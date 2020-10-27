@@ -10,7 +10,7 @@ Alan<br />
 
 <p>Dibuja un círculo, ya sea con la mano o en la mente, pero dibuja uno. ¿Listo?<br />
 ¿Hacia qué lado empezaste? ¿Sentido de las manecillas del reloj o en contra?<br /></p>
-<div style="display:flex; width: 200px">
+<div style="display:flex; width: 50%">
      <div style="flex:1;padding-right:5px;">
           <img src="Draw/Circle.gif">
      </div>
