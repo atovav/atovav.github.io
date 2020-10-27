@@ -578,7 +578,7 @@ map1
 
 <div class="centerimgcontainer">
 <img src="Geo/map.jpg" alt style>
-</div>s
+</div>
 
 ```python
 

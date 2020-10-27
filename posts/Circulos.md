@@ -7,7 +7,6 @@ Círculos y Círculos
 ================
 Alan<br />
 2020<br />
-<br />
 
 <p>Dibuja un círculo, ya sea con la mano o en la mente, pero dibuja uno. ¿Listo?<br />
 ¿Hacia qué lado empezaste? ¿Sentido de las manecillas del reloj o en contra?<br /></p>
@@ -24,7 +23,8 @@ Gracias a<a href="https://www.element84.com/blog/determining-the-winding-of-a-po
 <img src="Draw/countries.png" alt style>
 </div>
 
-<p>Vemos que México es de los países mas negativos es decir la mayoría de la gente dibuja círculos hacia la izquierda.  Mientras tanto, tenemos 2 lugares que dibujan círculos hacia la derecha estos son Taiwán y Japón.<br />
+<p>Vemos que México es de los países mas negativos es decir la mayoría de la gente dibuja círculos hacia la izquierda.  Mientras tanto, tenemos 2 lugares que dibujan círculos hacia la derecha, estos son Taiwán y Japón.<br />
+
 ¿Porque es esto? </p>
 
 
