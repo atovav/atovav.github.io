@@ -432,8 +432,9 @@ ax.hist(timedf)
 
 
 
-
-![png](Geo/output_18_1.png)
+<div class="centerimgcontainer">
+<img src="Geo/output_18_1.png" alt style>
+</div>
 
 
 
@@ -455,8 +456,9 @@ ax.hist(timedf)
 
 
 
-
-![png](Geo/output_19_1.png)
+<div class="centerimgcontainer">
+<img src="Geo/output_19_1.png" alt style>
+</div>
 
 
 
@@ -574,8 +576,9 @@ map1.add_data(data=df, name='d')
 map1
 ```
 
-![html](Geo/map.jpg)
-
+<div class="centerimgcontainer">
+<img src="Geo/map.jpg" alt style>
+</div>s
 
 ```python
 

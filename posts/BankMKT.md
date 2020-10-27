@@ -63,8 +63,9 @@ train_set %>% keep(is.numeric) %>%  gather() %>%
   facet_wrap(~ key, scales = "free") +
   geom_histogram()
 ```
-
-![](BankMKT_files/figure-markdown_github/dist1-1.png)
+<div class="centerimgcontainer">
+<img src="BankMKT_files/figure-markdown_github/dist1-1.png" alt style>
+</div>
 
 The variables do not follow a normal distribution nor any other distribution, in fact except age the other variables are sparse regarding values. There could be variables that are similar to each other so we are going to calculate the distance between them and see if there are distinct variables.
 
@@ -74,8 +75,9 @@ conset <- train_set[cont]
 d <- dist(t(as.matrix(conset)))
 heatmap(as.matrix(d), labRow = NA, labCol = NA)
 ```
-
-![](BankMKT_files/figure-markdown_github/heatmap-1.png)
+<div class="centerimgcontainer">
+<img src="BankMKT_files/figure-markdown_github/heatmap-1.png" alt style>
+</div>
 
 We clearly see similar variables and 2 different variables those are:
 
@@ -89,17 +91,23 @@ We clearly see similar variables and 2 different variables those are:
     ## $`3`
     ## [1] "nr.employed"
 
-Finally we are going to perform PCA to see if we can find some interesting when using 2 components. ![](BankMKT_files/figure-markdown_github/pca-1.png)
+Finally we are going to perform PCA to see if we can find some interesting when using 2 components.
+<div class="centerimgcontainer">
+<img src="BankMKT_files/figure-markdown_github/pca-1.png" alt style>
+</div>
 
 We find two like clusters, one has only one yes point while the other cluster has the rest of the data, however it does not help us to divide the decision of the user. At the end, we are going to use pdays and nr. employed in our model as there are the ones that seems unique. We are going to focus on the discrete variables.
 
 #### Discrete Variables
 
 We are going to take the proportion of yes vs total and plot it against each discrete variable to see the ones that give the most yes.
+<div class="centerimgcontainer">
+<img src="BankMKT_files/figure-markdown_github/discrete-1.png" alt style>
+</div>
 
-![](BankMKT_files/figure-markdown_github/discrete-1.png)
-
-![](BankMKT_files/figure-markdown_github/discrete2-1.png)
+<div class="centerimgcontainer">
+<img src="BankMKT_files/figure-markdown_github/discrete2-1.png" alt style>
+</div>
 
 We find that there are variables with higher proportion on the factors such as poutcome meaning if the client accepted a previous campaign then is more likely to accept again. We find that job, education, month and poutcome are the ones with higher proportion of yes.
 
@@ -112,12 +120,9 @@ train_set %>% keep(is.factor) %>%  gather() %>%
   geom_histogram(stat="count")
 ```
 
-    ## Warning: attributes are not identical across measure variables;
-    ## they will be dropped
-
-    ## Warning: Ignoring unknown parameters: binwidth, bins, pad
-
-![](BankMKT_files/figure-markdown_github/unnamed-chunk-2-1.png)
+<div class="centerimgcontainer">
+<img src="BankMKT_files/figure-markdown_github/unnamed-chunk-2-1.png" alt style>
+</div>
 
 The most important thing is regarding the depended variable, the cases of yes are minimal compare to the no case. This will make predicting yes difficult as you have an insignificant amount, so as a recommendation this data set needs more data to improve the predictions.
 
