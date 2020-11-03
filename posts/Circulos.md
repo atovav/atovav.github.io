@@ -9,17 +9,16 @@ Alan<br />
 2020<br />
 
 <p>Dibuja un círculo, ya sea con la mano o en la mente, pero dibuja uno. ¿Listo?<br />
-<div class="bigcenterimgcontainer">
+<div class="centerimgcontainer">
 <img src="Draw/pexels-drew-rae-580679.jpg" alt style>
 </div>
 ¿Hacia qué lado empezaste? ¿Sentido de las manecillas del reloj o en contra?<br /></p>
 <p>Si eres de América o Europa, lo mas probable es que fuera en contra las manecillas del reloj. Mientras en Japón lo mas seguro es que fuera en sentido de las manecillas.<br />
-¿Como podemos saber esto? En noviembre del 2016, Google lanzo Quick, Draw!. Quick, Draw! Es un juego el cual te pide dibujar una palabra en un tiempo determinado y una Inteligencia Artificial trata de adivinar. Se puede jugar [aquí]( https://quickdraw.withgoogle.com/).
-<br /></p>
+¿Como podemos saber esto? En noviembre del 2016, Google lanzo Quick, Draw!. Quick, Draw! Es un juego el cual te pide dibujar una palabra en un tiempo determinado y una Inteligencia Artificial trata de adivinar. Se puede jugar <a href='https://quickdraw.withgoogle.com/'>aquí</a>.</p>
 <p>Google lanzó al público más de 50 millones de dibujos, hechos por distintas personas que han jugado Quick Draw. Gracias a este set de imágenes podemos conocer como la gente dibuja, y encontrar distintas relaciones. Un ejemplo de esto son las imágenes de círculos.
-Gracias a<a href="https://www.element84.com/blog/determining-the-winding-of-a-polygon-given-as-a-set-of-ordered-points">Geometría</a> podemos saber que direccion se uso para dibujar el circulo.</p>
+Gracias a <a href="https://www.element84.com/blog/determining-the-winding-of-a-polygon-given-as-a-set-of-ordered-points">Geometría</a> podemos saber que direccion se uso para dibujar el circulo.</p>
 <p>Al calcular la dirección del dibujo se genera un número. Si es negativo significa que se dibuja hacia la izquierda, y si es positivo se dibuja hacia la derecha. </p>
-<div style="display:flex; width: 50%">
+<div style="display:flex; width: 50%; padding-right:10px">
      <div style="flex:1;padding-right:5px;">
           <img src="Draw/Circle.gif">
      </div>
@@ -28,7 +27,7 @@ Gracias a<a href="https://www.element84.com/blog/determining-the-winding-of-a-po
      </div>
 </div>
 <p>Al juntar los dibujos por país, podemos ver en promedio hacia que lado se dibuja en distintos países. </p>
-<div class="bigcenterimgcontainer">
+<div class="centerimgcontainer">
 <img src="Draw/countries.png" alt style>
 </div>
 
