@@ -32,8 +32,15 @@ Gracias a <a href="https://www.element84.com/blog/determining-the-winding-of-a-p
 </div>
 
 <p>Vemos que México es de los países mas negativos es decir la mayoría de la gente dibuja círculos hacia la izquierda.  Mientras tanto, tenemos 2 lugares que dibujan círculos hacia la derecha, estos son Taiwán y Japón.</p>
-
-
+<p>Podemos ver individualmente los países. En el caso de México, este se divide de esta manera: </p>
+<div style="display:flex; width: 55%; padding-right:20px">
+     <div style="flex:1;padding-right:5px;">
+          <img src="Draw/mxizq.png">
+     </div>
+     <div style="flex:1;padding-left:5px;">
+          <img src="Draw/mxder.png">
+     </div>
+</div>
 <!-- <p>Recently, there’s been a great deal of excitement and interest in deep neural networks because they’ve achieved breakthrough results in areas such as computer vision.<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a></p>
 <p>However, there remain a number of concerns about them. One is that it can be quite challenging to understand <em>what</em> a neural network is really doing. If one trains it well, it achieves high quality results, but it is challenging to understand how it is doing so. If the network fails, it is hard to understand what went wrong.</p>
 <p>While it is challenging to understand the behavior of deep neural networks in general, it turns out to be much easier to explore low-dimensional deep neural networks – networks that only have a few neurons in each layer. In fact, we can create visualizations to completely understand the behavior and training of such networks. This perspective will allow us to gain deeper intuition about the behavior of neural networks and observe a connection linking neural networks to an area of mathematics called topology.</p>
