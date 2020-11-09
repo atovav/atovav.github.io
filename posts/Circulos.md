@@ -33,6 +33,7 @@ Gracias a <a href="https://www.element84.com/blog/determining-the-winding-of-a-p
 
 <p>Vemos que México es de los países mas negativos es decir la mayoría de la gente dibuja círculos hacia la izquierda.  Mientras tanto, tenemos 2 lugares que dibujan círculos hacia la derecha, estos son Taiwán y Japón.</p>
 <p>Podemos ver individualmente los países. En el caso de México, este se divide de esta manera: </p>
+<h3>México</h3>
 <div style="display:flex; width: 55%; padding-right:20px">
      <div style="flex:1;padding-right:5px;">
           <img src="Draw/mxizq.png">
