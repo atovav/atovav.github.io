@@ -142,6 +142,8 @@ img {
 }
 
 .tablecontainer {
+	width: 100%;
+	height: auto;
 	margin: 30px auto;
 	display: block
 }
