@@ -40,25 +40,25 @@ Gracias a <a href="https://www.element84.com/blog/determining-the-winding-of-a-p
           <img src="Draw/mxder.png">
      </div>
 </div> -->
-<div class="tablecontainer">
-     <table id="table1">
-          <tr>
-               <td><h3>México</h3></td>
-               <td><img src="Draw/mxizq.png"></td>
-               <td><img src="Draw/mxder.png"></td>
-          </tr>
-          <tr>
-               <td><h3>US</h3></td>
-               <td><img src="Draw/usizq.png"></td>
-               <td><img src="Draw/usder.png"></td>
-          </tr>
-          <tr>
-               <td><h3>Japon</h3></td>
-               <td><img src="Draw/jpizq.png"></td>
-               <td><img src="Draw/jpder.png"></td>
-          </tr>
-     </table>
-</div>
+
+<table class="center">
+     <tr>
+          <td><h3>México</h3></td>
+          <td><img src="Draw/mxizq.png"></td>
+          <td><img src="Draw/mxder.png"></td>
+     </tr>
+     <tr>
+          <td><h3>US</h3></td>
+          <td><img src="Draw/usizq.png"></td>
+          <td><img src="Draw/usder.png"></td>
+     </tr>
+     <tr>
+          <td><h3>Japon</h3></td>
+          <td><img src="Draw/jpizq.png"></td>
+          <td><img src="Draw/jpder.png"></td>
+     </tr>
+</table>
+
 <!-- <p>Recently, there’s been a great deal of excitement and interest in deep neural networks because they’ve achieved breakthrough results in areas such as computer vision.<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a></p>
 <p>However, there remain a number of concerns about them. One is that it can be quite challenging to understand <em>what</em> a neural network is really doing. If one trains it well, it achieves high quality results, but it is challenging to understand how it is doing so. If the network fails, it is hard to understand what went wrong.</p>
 <p>While it is challenging to understand the behavior of deep neural networks in general, it turns out to be much easier to explore low-dimensional deep neural networks – networks that only have a few neurons in each layer. In fact, we can create visualizations to completely understand the behavior and training of such networks. This perspective will allow us to gain deeper intuition about the behavior of neural networks and observe a connection linking neural networks to an area of mathematics called topology.</p>
