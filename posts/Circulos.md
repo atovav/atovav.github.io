@@ -17,7 +17,7 @@ Alan<br />
 <p>Google lanzó al público más de 50 millones de dibujos, hechos por distintas personas que han jugado Quick Draw. Gracias a este set de imágenes podemos conocer como la gente dibuja, y encontrar distintas relaciones. Un ejemplo de esto son las imágenes de círculos.
 Gracias a <a href="https://www.element84.com/blog/determining-the-winding-of-a-polygon-given-as-a-set-of-ordered-points">Geometría</a> podemos saber que direccion se uso para dibujar el circulo.</p>
 <p>Al calcular la dirección del dibujo se genera un número. Si es negativo significa que se dibuja hacia la izquierda, y si es positivo se dibuja hacia la derecha. </p>
-<div style="display:flex; width: 55%; padding-right:20px">
+<div style="display:flex; width: 55%; padding-right:20px; margin: 30px auto 0px;">
      <div style="flex:1;padding-right:5px;">
           <img src="Draw/Circle.gif">
      </div>
@@ -26,7 +26,7 @@ Gracias a <a href="https://www.element84.com/blog/determining-the-winding-of-a-p
      </div>
 </div>
 <p>Al juntar los dibujos por país, podemos ver en promedio hacia que lado se dibuja en distintos países. </p>
-<div class="centerimgcontainer">
+<div class="bigcenterimgcontainer">
 <img src="Draw/countries.png" alt style>
 </div>
 
