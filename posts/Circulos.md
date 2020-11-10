@@ -7,11 +7,10 @@ Círculos y Círculos
 ================
 Alan<br />
 2020<br />
-
-<p>Dibuja un círculo, ya sea con la mano o en la mente, pero dibuja uno. ¿Listo?<br />
 <div class="centerimgcontainer">
-<img src="Draw/pexels-drew-rae-580679.jpg" alt style>
+<img src="Draw/angela-compagnone-vGOFwjYdw2M-unsplash.jpg" alt style>
 </div>
+<p>Dibuja un círculo, ya sea con la mano o en la mente, pero dibuja uno. ¿Listo?<br />
 ¿Hacia qué lado empezaste? ¿Sentido de las manecillas del reloj o en contra?<br /></p>
 <p>Si eres de América o Europa, lo mas probable es que fuera en contra las manecillas del reloj. Mientras en Japón lo mas seguro es que fuera en sentido de las manecillas.<br />
 ¿Como podemos saber esto? En noviembre del 2016, Google lanzo Quick, Draw!. Quick, Draw! Es un juego el cual te pide dibujar una palabra en un tiempo determinado y una Inteligencia Artificial trata de adivinar. Se puede jugar <a href='https://quickdraw.withgoogle.com/'>aquí</a>.</p>
@@ -34,14 +33,25 @@ Gracias a <a href="https://www.element84.com/blog/determining-the-winding-of-a-p
 <p>Vemos que México es de los países mas negativos es decir la mayoría de la gente dibuja círculos hacia la izquierda.  Mientras tanto, tenemos 2 lugares que dibujan círculos hacia la derecha, estos son Taiwán y Japón.</p>
 <p>Podemos ver individualmente los países. En el caso de México, este se divide de esta manera: </p>
 <h3>México</h3>
-<div style="display:flex; width: 55%; padding-right:20px">
+<!-- <div style="display:flex; width: 55%; padding-right:20px">
      <div style="flex:1;padding-right:5px;">
           <img src="Draw/mxizq.png">
      </div>
      <div style="flex:1;padding-left:5px;">
           <img src="Draw/mxder.png">
      </div>
-</div>
+</div> -->
+<table>
+  <tr>
+    <td><h3>México</h3></td>
+    <td><img src="Draw/mxizq.png"></td>
+    <td><img src="Draw/mxder.png"></td>
+  </tr>
+  <tr>
+    <td>Jane</td>
+    <td>Doe</td>
+  </tr>
+</table>
 <!-- <p>Recently, there’s been a great deal of excitement and interest in deep neural networks because they’ve achieved breakthrough results in areas such as computer vision.<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a></p>
 <p>However, there remain a number of concerns about them. One is that it can be quite challenging to understand <em>what</em> a neural network is really doing. If one trains it well, it achieves high quality results, but it is challenging to understand how it is doing so. If the network fails, it is hard to understand what went wrong.</p>
 <p>While it is challenging to understand the behavior of deep neural networks in general, it turns out to be much easier to explore low-dimensional deep neural networks – networks that only have a few neurons in each layer. In fact, we can create visualizations to completely understand the behavior and training of such networks. This perspective will allow us to gain deeper intuition about the behavior of neural networks and observe a connection linking neural networks to an area of mathematics called topology.</p>
