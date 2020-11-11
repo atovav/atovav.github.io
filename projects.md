@@ -11,6 +11,10 @@ title: Projects
 
 <p> Below you will find links to the projects that have been done:</p>
 
+### Círculos y Círculos
+
+Analizando como el lugar donde se vive influye en la forma de dibujar.
+- [Círculos](posts/Circulos)
 
 ### Analyzing BBVA tweets
 
