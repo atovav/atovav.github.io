@@ -15,7 +15,7 @@ Alan<br />
 <p>¿Sabías que donde vivas influye de que hacía que lado dibujas el circulo? En otras palabras, si eres de América o Europa, lo mas probable es que fuera en contra las manecillas del reloj. Mientras en Japón lo mas seguro es que fuera en sentido de las manecillas.<br /></p>
 <p>¿Como podemos saber esto? En noviembre del 2016, Google lanzo Quick, Draw!. Quick, Draw! Es un juego el cual te pide dibujar una palabra en un tiempo determinado y una Inteligencia Artificial trata de adivinar. Se puede jugar <a href='https://quickdraw.withgoogle.com/'>aquí</a>. <br />
 Para términos de investigación, Google lanzó al público más de 50 millones de dibujos, hechos por distintas personas que han jugado Quick Draw. Gracias a este set de imágenes podemos conocer como la gente dibuja, y encontrar distintas relaciones. Un ejemplo de esto son las imágenes de círculos.</p>
-<p>Uno de los datos que Google guarda es el orden de los trazos que se usaron. Podríamos graficar cada uno de esos trazos para saber hacia qué lado se dibuja, sin embargo, debido a la cantidad de dibujos tomaría mucho tiempo. Otra forma es gracias a <a href="https://www.element84.com/blog/determining-the-winding-of-a-polygon-given-as-a-set-of-ordered-points">Geometría</a> podemos saber que direccion se uso para dibujar el circulo.</p>
+<p>Uno de los datos que Google guarda es el orden de los trazos que se usaron. Podríamos graficar cada uno de esos trazos para saber hacia qué lado se dibuja, sin embargo, debido a la cantidad de dibujos tomaría mucho tiempo. Otra forma es por <a href="https://www.element84.com/blog/determining-the-winding-of-a-polygon-given-as-a-set-of-ordered-points">Geometría</a>. El cual nos da una formula para saber qué dirección se uso al dibujar el circulo.</p>
 <p>Al calcular la dirección del dibujo se genera un número. Si es negativo significa que se dibuja hacia la izquierda, y si es positivo se dibuja hacia la derecha. Para asegurarnos que es correcto, graficamos un circulo y añadimos el número. Y queda de esta manera:</p>
 <div style="display:flex; width: 75%; padding-right:20px; margin: 30px auto 0px;">
      <div style="flex:1;padding-right:5px;">
@@ -25,7 +25,9 @@ Para términos de investigación, Google lanzó al público más de 50 millones 
           <img src="Draw/Cirsent.gif">
      </div>
 </div>
-<p>Al juntar los dibujos por país, podemos ver en promedio hacia que lado se dibuja en distintos países. </p>
+<p>¡Funciona! Ahora tenemos la dirección para cada dibujo. <br />
+Otro dato que Google guarda es el país donde se realizó el dibujo.
+Al juntar los dibujos por país, podemos ver en promedio hacia que lado se dibuja en distintos países. </p>
 <div class="bigcenterimgcontainer">
 <img src="Draw/countries.png" alt style>
 </div>
