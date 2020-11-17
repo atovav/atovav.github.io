@@ -26,8 +26,7 @@ Para términos de investigación, Google lanzó al público más de 50 millones 
      </div>
 </div>
 <p>¡Funciona! Ahora tenemos la dirección para cada dibujo. <br />
-Otro dato que Google guarda es el país donde se realizó el dibujo.
-Al juntar los dibujos por país, podemos ver en promedio hacia que lado se dibuja en distintos países. </p>
+Otro dato que Google guarda es el país donde se realizó el dibujo. Asi que podemos juntar cada dirección de cada dibujo por país y promediarlo. La idea es que entre más dibujos tengan dirección negativa,  </p>
 <div class="bigcenterimgcontainer">
 <img src="Draw/countries.png" alt style>
 </div>
@@ -51,3 +50,8 @@ Al juntar los dibujos por país, podemos ver en promedio hacia que lado se dibuj
           <td><img src="Draw/jpder.png"></td>
      </tr>
 </table>
+
+
+<div class="centerimgcontainer">
+<img src="Draw/jplight.jpg" alt style>
+</div>
