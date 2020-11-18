@@ -52,6 +52,6 @@ Otro dato que Google guarda es el país donde se realizó el dibujo. Asi que pod
 </table>
 
 
-<div class="centerimgcontainer">
+<div class="smallcenterimgcontainer">
 <img src="Draw/jplight.jpg" alt style>
 </div>
