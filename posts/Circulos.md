@@ -31,8 +31,8 @@ Otro dato que Google guarda es el país donde se realizó el dibujo. Asi que pod
 <img src="Draw/countries.png" alt style>
 </div>
 
-<p>Vemos que México es de los países mas negativos es decir la mayoría de la gente dibuja círculos hacia la izquierda.  Mientras tanto, tenemos 2 lugares que dibujan círculos hacia la derecha, estos son Taiwán y Japón.</p>
-<p>Podemos ver individualmente los países.</p>
+<p>Con esto podemos darnos una idea de cómo la gente dibuja en distintos lados. Vemos que México es de los países más negativos, es decir la mayoría de la gente dibuja círculos hacia la izquierda.  Mientras tanto, tenemos 2 lugares que dibujan círculos hacia la derecha, estos son Taiwán y Japón. Esto no significa que todos dibujan círculos hacia la izquierda o a la derecha.</p>
+<p>Si nos enfocamos individualmente país a país podemos encontrar que la gente dibuja de los dos lados, pero en distinta proporción. En el caso de México, del número de dibujos que hay 88% dibuja hacia la izquierda mientras que el 12% dibuja hacia la derecha.</p>
 <table class="center">
      <tr>
           <td><h3>México</h3></td>
