@@ -32,7 +32,8 @@ Otro dato que Google guarda es el país donde se realizó el dibujo. Asi que pod
 </div>
 
 <p>Con esto podemos darnos una idea de cómo la gente dibuja en distintos lados. Vemos que México es de los países más negativos, es decir la mayoría de la gente dibuja círculos hacia la izquierda.  Mientras tanto, tenemos 2 lugares que dibujan círculos hacia la derecha, estos son Taiwán y Japón. Esto no significa que todos dibujan círculos hacia la izquierda o a la derecha.</p>
-<p>Si nos enfocamos individualmente país a país podemos encontrar que la gente dibuja de los dos lados, pero en distinta proporción. En el caso de México, del número de dibujos que hay 88% dibuja hacia la izquierda mientras que el 12% dibuja hacia la derecha.</p>
+<p>Si nos enfocamos individualmente, país por país, podemos encontrar que la gente dibuja de los dos lados en distinta proporción. En el caso de México, del número de dibujos que hay 88% dibuja hacia la izquierda mientras que el 12% dibuja hacia la derecha.<br />
+Incluyendo México vamos a elegir 4 de los 68 países que graficamos previamente y separar por dirección los círculos. Elegimos México por ser de los países mas negativos en promedio, USA por estar entre la mayoría de los países, Egipto por ser de los países menos negativos y finalmente Japón por ser el país más positivo. Graficamos algunos de los círculos que la gente dibujó y la proporción de gente que dibuja círculos hacia la izquierda o derecha.</p>
 <table class="center">
      <tr>
           <td><h3>México</h3></td>
@@ -40,17 +41,22 @@ Otro dato que Google guarda es el país donde se realizó el dibujo. Asi que pod
           <td><img src="Draw/mxder.png"></td>
      </tr>
      <tr>
-          <td><h3>US</h3></td>
+          <td><h3>USA</h3></td>
           <td><img src="Draw/usizq.png"></td>
           <td><img src="Draw/usder.png"></td>
      </tr>
      <tr>
-          <td><h3>Japon</h3></td>
+          <td><h3>Egipto</h3></td>
+          <td><img src="Draw/egizq.png"></td>
+          <td><img src="Draw/egder.png"></td>
+     </tr>
+     <tr>
+          <td><h3>Japón</h3></td>
           <td><img src="Draw/jpizq.png"></td>
           <td><img src="Draw/jpder.png"></td>
      </tr>
 </table>
-
+<p></p>
 
 <div class="smallcenterimgcontainer">
 <img src="Draw/jplight.jpg" alt style>
