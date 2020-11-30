@@ -60,18 +60,18 @@ Incluyendo México vamos a elegir 4 de los 68 países que graficamos previamente
 <p>¿Existe alguna razón por la cual ciertos países dibujan círculos hacia la derecha, mientras el resto dibuja hacia la izquierda?<br />
 La diferencia puede ser explicada debido a la escritura y lectura de países orientales. En términos de lectura, nosotros generalmente leemos de izquierda a derecha. En Japón se lee de arriba hacia abajo empezando de la derecha hacia la izquierda. La siguiente imagen muestra una parte de un libro en japones con la dirección de lectura.
 </p>
-<div class="smallcenterimgcontainer">
+<!-- <div class="smallcenterimgcontainer">
 <img src="Draw/jplight.jpg" alt style>
-</div>
-
-<div style="display:flex; width: 75%; padding-right:20px; margin: 30px auto 0px;">
+</div> -->
+<div style="display:flex; width: 20%; padding-right:20px; margin: 30px auto 0px;">
      <div style="flex:1;padding-right:5px;">
-          <img src="Draw/jplight.jpg">
-     </div>
-     <div style="flex:1;padding-left:5px;">
           <img src="Draw/ahir.jpg">
      </div>
+     <div style="flex:1;padding-left:15px;">
+          <img src="Draw/jplight.jpg">
+     </div>
 </div>
+
 
 
 
