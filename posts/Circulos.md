@@ -58,12 +58,12 @@ Incluyendo México vamos a elegir 4 de los 68 países que graficamos previamente
 </table>
 <p>Cool! No solo vemos la distribución de qué lado dibujan, sino que también vemos los dibujos que las personas hicieron. Lamentablemente no es posible graficar todos los dibujos y solo se muestra un pequeño set de estos, sin embargo, podemos ver cómo la gente dibuja círculos en distintos tamaños y posiciones. En este caso Egipto parece ser muy caótico para dibujar círculos. </p>
 <p>¿Existe alguna razón por la cual ciertos países dibujan círculos hacia la derecha, mientras el resto dibuja hacia la izquierda?<br />
-La diferencia puede ser explicada debido a la escritura y lectura de países orientales. En términos de lectura, nosotros generalmente leemos de izquierda a derecha. En Japón se lee de arriba hacia abajo empezando de la derecha hacia la izquierda. La siguiente imagen muestra una parte de un libro en japones con la dirección de lectura.
+La diferencia puede ser explicada debido a la escritura y lectura de países orientales.<br />
+En términos de escritura, Japón usa 3 componentes de escritura: Hiragana, Katakana y Kanji. Cada componente tiene sus propias características y similitudes. Lo que nos importa es que estos componentes tienen pasos para escribirlos. Si aprendes este idioma, lo que descubres es que cada letra o kanji tiene una forma correcta de escribirse. Cuando encuentras formas redondas la manera correcta de escribirlas es haciendo el circulo o la forma hacia las manecillas del reloj. <br />
+En términos de lectura, nosotros generalmente leemos de izquierda a derecha. En Japón se lee de arriba hacia abajo empezando de la derecha hacia la izquierda. <br />
+Las siguientes imágenes muestran estos dos términos, la letra a y la forma correcta de escribirse, y una parte de un libro en japones con la dirección de lectura.
 </p>
-<!-- <div class="smallcenterimgcontainer">
-<img src="Draw/jplight.jpg" alt style>
-</div> -->
-<div style="display:flex; width: 25%; padding-right:20px; margin: 30px auto 0px;">
+<div style="display:flex; width: 30%; padding-right:20px; margin: 30px auto 0px;">
      <div style="flex:1;padding-right:5px;">
           <img src="Draw/ahir.jpg">
      </div>
@@ -71,7 +71,8 @@ La diferencia puede ser explicada debido a la escritura y lectura de países ori
           <img src="Draw/jplight.jpg">
      </div>
 </div>
-
+<p>Es interesante descubrir que esto tiene relación en como las personas dibujan círculos en distintos países y como descubrimos esto gracias a las imágenes que se generaron de un juego. Existen muchas más imágenes y más cosas por descubrir con este set de datos. Gracias por tu tiempo y cualquier duda, comentario o sugerencia ¡contáctame!</p>
+<br />
 
 
 
