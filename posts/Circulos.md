@@ -64,3 +64,17 @@ La diferencia puede ser explicada debido a la escritura y lectura de países ori
 <img src="Draw/jplight.jpg" alt style>
 </div>
 
+<div style="display:flex; width: 75%; padding-right:20px; margin: 30px auto 0px;">
+     <div style="flex:1;padding-right:5px;">
+          <img src="Draw/jplight.jpg">
+     </div>
+     <div style="flex:1;padding-left:5px;">
+          <img src="Draw/ahir.jpg">
+     </div>
+</div>
+
+
+
+
+
+
