@@ -11,7 +11,7 @@ Alan<br />
 <img src="Draw/angela-compagnone-vGOFwjYdw2M-unsplash.jpg" alt style>
 </div>
 <p>Dibuja un círculo, ya sea con la mano o en la mente, pero dibuja uno. ¿Listo?<br /><br />
-¿Hacia qué lado empezaste? ¿Sentido de las manecillas del reloj o en contra?<br /></p>
+No es una pregunta muy común, pero ¿Hacia qué lado empezaste? ¿Sentido de las manecillas del reloj o en contra?<br /></p>
 <p>¿Sabías que donde vivas influye de que hacía que lado dibujas el circulo? En otras palabras, si eres de América o Europa, lo mas probable es que fuera en contra las manecillas del reloj. Mientras en Japón lo mas seguro es que fuera en sentido de las manecillas.<br /></p>
 <p>¿Como podemos saber esto? En noviembre del 2016, Google lanzo Quick, Draw!. Quick, Draw! Es un juego el cual te pide dibujar una palabra en un tiempo determinado y una Inteligencia Artificial trata de adivinar. Se puede jugar <a href='https://quickdraw.withgoogle.com/'>aquí</a>. <br />
 Para términos de investigación, Google lanzó al público más de 50 millones de dibujos, hechos por distintas personas que han jugado Quick Draw. Gracias a este set de imágenes podemos conocer como la gente dibuja, y encontrar distintas relaciones. Un ejemplo de esto son las imágenes de círculos.</p>
@@ -56,8 +56,11 @@ Incluyendo México vamos a elegir 4 de los 68 países que graficamos previamente
           <td><img src="Draw/jpder.png"></td>
      </tr>
 </table>
-<p></p>
-
+<p>Cool! No solo vemos la distribución de qué lado dibujan, sino que también vemos los dibujos que las personas hicieron. Lamentablemente no es posible graficar todos los dibujos y solo se muestra un pequeño set de estos, sin embargo, podemos ver cómo la gente dibuja círculos en distintos tamaños y posiciones. En este caso Egipto parece ser muy caótico para dibujar círculos. </p>
+<p>¿Existe alguna razón por la cual ciertos países dibujan círculos hacia la derecha, mientras el resto dibuja hacia la izquierda?<br />
+La diferencia puede ser explicada debido a la escritura y lectura de países orientales. En términos de lectura, nosotros generalmente leemos de izquierda a derecha. En Japón se lee de arriba hacia abajo empezando de la derecha hacia la izquierda. La siguiente imagen muestra una parte de un libro en japones con la dirección de lectura.
+</p>
 <div class="smallcenterimgcontainer">
 <img src="Draw/jplight.jpg" alt style>
 </div>
+
