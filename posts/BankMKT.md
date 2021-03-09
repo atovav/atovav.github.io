@@ -7,7 +7,9 @@ Bank Telemarketing
 ================
 Alan Tovar
 September 6, 2019
-
+<div class="centerimgcontainer">
+<img src="BankMKT_files/img/pexels-lukas-669610.jpg" alt style>
+</div>
 Overview
 --------
 
