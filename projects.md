@@ -7,6 +7,15 @@ title: Projects
 <p>Mi primera aplicación usando redes neuronales. Permite cambiar images a otro estilo. La aplicación tarda en cargar unos minutos</p>
 -[Imagenizar](https://imagenizar.herokuapp.com/)
 
+# Data analysis and visualization
+
+<p> Below you will find links to some analysis and visualizations that have been done:</p>
+
+### Back to school survey analysis
+
+Visualization and analysis of a shop survey.
+- [survey analysis](posts/backschoolsurvey)
+
 # Data Projects
 
 <p> Below you will find links to the projects that have been done:</p>
