@@ -6,7 +6,7 @@ title: Survey analysis
 Back to school store survey
 ================
 Alan<br />
-2020<br />
+2021<br />
 
 <p>The data that we had was about a survey they did for a back-to-school promotion. <br />
 The survey results where summarized and classified into 2: Our stores and all stores. <br />
