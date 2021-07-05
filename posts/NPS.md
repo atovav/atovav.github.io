@@ -27,25 +27,29 @@ We see 4 countries with improvements and 2 countries with decreases. The importa
 <img src="img/npsbycountry.jpg" alt style>
 </div>
 
-<h4>PA: NPS components breakdown – Passive are decreasing.</h4>
+<h4>PA: NPS components breakdown – Passives decreasing.</h4>
+<p>We are going to breakdown NPS to see where the problem lies. <br />
+First, we see that the number of passives is decreasing. The percentage decrease was 86% from the previous month.</p>
 
 <div class="bigcenterimgcontainer">
 <img src="img/panpspass.jpg" alt style>
 </div>
 
-<h4>PA: NPS components breakdown – Promoters are decreasing.</h4>
+<h4>PA: NPS components breakdown – Promoters decreasing.</h4>
+
+<p>One problem that we found is the number of promoters decreased by 4%. </p>
 
 <div class="bigcenterimgcontainer">
 <img src="img/panpsprom.jpg" alt style>
 </div>
 
-<h4>PA: NPS components breakdown – Detractors are increasing.</h4>
+<h4>PA: NPS components breakdown – Detractors increasing.</h4>
 
 <div class="bigcenterimgcontainer">
 <img src="img/panspdes1.jpg" alt style>
 </div>
 
-
+<h4>PA: NPS components breakdown – Detractors more than double</h4>
 
 <div class="bigcenterimgcontainer">
 <img src="img/panspdes2.jpg" alt style>
