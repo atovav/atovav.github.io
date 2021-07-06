@@ -61,7 +61,11 @@ First, we see that the number of passives is decreasing. The percentage decrease
 
 <p>We can find what could be the problem. The data has a column for issues; however, we found a problem in this specific case.  </p>
 
-<h4>Category</h4>
+<h4>Issue tag is irrelevant for this country</h4>
+
+<p>Of all the countries, PA is the one that does not have any issue tag. <br />
+Recommendation: See why this country does not have any issue tag.</p>
+
 
 <table class="tg">
 <colgroup>
