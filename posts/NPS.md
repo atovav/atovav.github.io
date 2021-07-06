@@ -59,9 +59,20 @@ First, we see that the number of passives is decreasing. The percentage decrease
 <img src="img/panspdes2.jpg" alt style>
 </div>
 
+<p>We can find what could be the problem. The data has a column for issues; however, we found a problem in this specific case.  </p>
+
 <h4>Category</h4>
 
 <table class="tg">
+<colgroup>
+<col style="width: 80px">
+<col style="width: 80px">
+<col style="width: 80px">
+<col style="width: 80px">
+<col style="width: 80px">
+<col style="width: 80px">
+<col style="width: 80px">
+</colgroup>
 <thead>
   <tr>
     <th class="tg-0lax"></th>
