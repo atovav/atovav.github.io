@@ -37,7 +37,7 @@ First, we see that the number of passives is decreasing. The percentage decrease
 
 <h4>PA: NPS components breakdown – Promoters decreasing.</h4>
 
-<p>One problem that we found is the number of promoters decreased by 4%. </p>
+<p>One problem that we found is the number of promoters decreased by 4%!</p>
 
 <div class="bigcenterimgcontainer">
 <img src="img/panpsprom.jpg" alt style>
@@ -45,15 +45,57 @@ First, we see that the number of passives is decreasing. The percentage decrease
 
 <h4>PA: NPS components breakdown – Detractors increasing.</h4>
 
+<p>We saw decreases in passives and promoters. Leading to a sharp increase in detractors. This is the reason why PA has a 22% decrease from the previous month.</p>
+
 <div class="bigcenterimgcontainer">
 <img src="img/panspdes1.jpg" alt style>
 </div>
 
 <h4>PA: NPS components breakdown – Detractors more than double</h4>
 
+<p>The increase of detractors from the previous month is 236%.  We need to find the cause of this sharp increase. </p>
+
 <div class="bigcenterimgcontainer">
 <img src="img/panspdes2.jpg" alt style>
 </div>
+
+<h4>Category</h4>
+
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-0lax"></th>
+    <th class="tg-0lax">CL</th>
+    <th class="tg-0lax">CO</th>
+    <th class="tg-0lax">MX</th>
+    <th class="tg-0lax">PA</th>
+    <th class="tg-0lax">PE</th>
+    <th class="tg-0lax">VE</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-9s94">Nulls</td>
+    <td class="tg-pb6s">30</td>
+    <td class="tg-pb6s">353</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-i99s">68</td>
+    <td class="tg-pb6s">63</td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-9s94">Reasons</td>
+    <td class="tg-pb6s">10</td>
+    <td class="tg-pb6s">1,806</td>
+    <td class="tg-pb6s">2,704</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-pb6s">821</td>
+    <td class="tg-pb6s">350</td>
+  </tr>
+</tbody>
+</table>
+
+
 
 
 
