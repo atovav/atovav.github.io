@@ -114,9 +114,17 @@ Recommendation: See why this country does not have any issue tag.</p>
 <h4>Using Comments as a guide</h4>
 
 <p>Another way to understand why there is an increase in detractors is to look at the comments. <br />
-We took each comment divided into words and 
+We took each comment divided into words and assigned a neutral, negative, and positive label. We removed the neutral label and graph the words. Blue means positive and red means negative. </p>
 
 <div class="bigcenterimgcontainer">
 <img src="img/wordcom.jpg" alt style>
 </div>
+
+<p>We see that most of the positive comments come from service, while most of the complains come from delivery, time, damage. <br />
+We have now a place to start. </p>
+
+<h4>Final Recommendations</h4>
+1)	Find why PA is the only country without issues tag. <br />
+2)	There is an issue with deliveries. Find why this specific delivery type is failing. <br />
+<br />
 
