@@ -109,8 +109,14 @@ Recommendation: See why this country does not have any issue tag.</p>
   </tr>
 </tbody>
 </table>
+<br/>
 
+<h4>Using Comments as a guide</h4>
 
+<p>Another way to understand why there is an increase in detractors is to look at the comments. <br />
+We took each comment divided into words and 
 
-
+<div class="bigcenterimgcontainer">
+<img src="img/wordcom.jpg" alt style>
+</div>
 
