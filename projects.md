@@ -16,6 +16,11 @@ title: Projects
 Visualization and analysis of a shop survey.
 - [survey analysis](posts/backschoolsurvey)
 
+### NPS analysis
+
+NPS analysis with recommendations.
+- [NPS analysis](posts/NPS)
+
 # Data Projects
 
 <p> Below you will find links to the projects that have been done:</p>
