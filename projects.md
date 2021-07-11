@@ -21,6 +21,12 @@ Visualization and analysis of a shop survey.
 NPS analysis with recommendations.
 - [NPS analysis](posts/NPS)
 
+### Simple MKT dashboard
+
+NPS analysis with recommendations.
+- [Dashboard](posts/MKTdashboard)
+
+
 # Data Projects
 
 <p> Below you will find links to the projects that have been done:</p>
