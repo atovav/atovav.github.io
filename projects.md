@@ -23,7 +23,7 @@ NPS analysis with recommendations.
 
 ### Simple MKT dashboard
 
-NPS analysis with recommendations.
+Simple marketing dashboard.
 - [Dashboard](posts/MKTdashboard)
 
 
