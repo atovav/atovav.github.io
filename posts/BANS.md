@@ -9,7 +9,6 @@ Alan<br />
 2021<br />
 
 <h3>¿Que son BANs?</h3>
-<br />
 <p>BAN sus siglas en ingles es Big Agreggated Numbers o Grandes Números Agregados.<br />
 Sirven para resumir los datos y para resaltar KPIs y números importantes. <br />
 </p>
@@ -25,9 +24,7 @@ Sirven para resumir los datos y para resaltar KPIs y números importantes. <br /
 •	Contexto (Comparado contra año anterior, etc.)<br />
 •	Tendencia (Incremento o decremento) <br />
 <br />
-Other ideas: change in design, add a previous year with less contrast. <br />
-I will be updating this page with those ideas. </p>
-<br />
+
 
 
 
