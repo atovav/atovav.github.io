@@ -24,9 +24,17 @@ Sirven para resumir los datos y para resaltar KPIs y números importantes. <br /
 •	Contexto (Comparado contra año anterior, etc.)<br />
 •	Tendencia (Incremento o decremento) <br />
 <br />
+<h4>Simple Texto</h4>
 
+<h4>Simple BAN</h4>
 
+<h4>Por Figuras</h4>
+<div class="bigcenterimgcontainer">
+<img src="img/kpishapes.jpg" alt style>
+</div>
 
+<h4>Combinando gráficas</h4>
+<br />
 
 
 
