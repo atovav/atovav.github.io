@@ -30,7 +30,7 @@ Sirven para resumir los datos y para resaltar KPIs y números importantes. <br /
 Todos los ejemplos fueron realizados en Tableau</p>
 
 <h4>Simple Texto</h4>
-<div class="centerimgcontainer">
+<div class="smallcenterimgcontainer">
 <img src="img/text.jpg" alt style>
 </div>
 
