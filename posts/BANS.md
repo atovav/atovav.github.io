@@ -30,7 +30,7 @@ Sirven para resumir los datos y para resaltar KPIs y números importantes. <br /
 Todos los ejemplos fueron realizados en Tableau</p>
 
 <h4>Simple Texto</h4>
-<div class="bigcenterimgcontainer">
+<div class="centerimgcontainer">
 <img src="img/text.jpg" alt style>
 </div>
 
@@ -53,8 +53,13 @@ Todos los ejemplos fueron realizados en Tableau</p>
 De igual forma que el estilo anterior, el color y, en caso de la figura de en medio, cambian dependiendo si la tendencia fue positiva o negativa. </p>
 
 
-<!-- <h4>Combinando gráficas</h4>
-<br /> -->
+<h4>Combinando gráficas</h4>
+<div class="bigcenterimgcontainer">
+<img src="img/kpigraphs.jpg" alt style>
+</div>
+
+<p>
+<br />
 
 
 
