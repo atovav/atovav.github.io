@@ -26,6 +26,10 @@ NPS analysis with recommendations.
 Simple marketing dashboard.
 - [Dashboard](posts/MKTdashboard)
 
+### Una Introducción a los BANs
+
+¿Que son BANs?.
+- [BANs](posts/BANS)
 
 # Data Projects
 
