@@ -9,7 +9,7 @@
 			callbackTables = [];
 
 		var activitiesCols = [
-			{ id: 'id', dataType: tableau.dataTypeEnum.int },
+			// { id: 'id', dataType: tableau.dataTypeEnum.int },
 			{ id: 'company_id', dataType: tableau.dataTypeEnum.int },
 			{ id: 'user_id', dataType: tableau.dataTypeEnum.int },
 			{ id: 'done', dataType: tableau.dataTypeEnum.bool },
@@ -22,8 +22,8 @@
 			{ id: 'add_time', dataType: tableau.dataTypeEnum.date },
 			{ id: 'marked_as_done_time', dataType: tableau.dataTypeEnum.date },
 			{ id: 'subject', dataType: tableau.dataTypeEnum.string },
-			{ id: 'deal_id', dataType: tableau.dataTypeEnum.int },
-			{ id: 'org_id', dataType: tableau.dataTypeEnum.int },
+			{ id: 'deal_id', dataType: tableau.dataTypeEnum.string },
+			{ id: 'org_id', dataType: tableau.dataTypeEnum.string },
 			{ id: 'person_id', dataType: tableau.dataTypeEnum.int },
 			{ id: 'active_flag', dataType: tableau.dataTypeEnum.bool },
 			{ id: 'update_time', dataType: tableau.dataTypeEnum.date },
